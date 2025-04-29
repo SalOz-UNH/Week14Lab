@@ -21,8 +21,22 @@ using namespace std;
 int main() {
 
 	MergeSortClass sorter;
+	vector<int> vec;
 
-	vector <int> vec {12,11,13,5,6,7};
+	int input;
+
+	cout << "Enter your numbers (-1 to quit):" << endl;
+	do {
+		cin >> input;
+		if (input != -1) {
+			vec.push_back(input);
+		} else {
+			break;
+		}
+	} while (input != -1);
+
+
+	vector <int> sortedVec = sorter.mergeSort(&vec);
 
 	cout << "Unsorted vector: " << endl;
 
@@ -37,8 +51,13 @@ int main() {
 	cout << endl;
 
 	cout << "Sorted vector: " << endl;
-
-	sorter.mergeSort(&vec);
-
+	for (int i = 0; i < sortedVec.size(); i++) {
+		if (i < sortedVec.size() - 1) {
+			cout << sortedVec[i] << ", ";
+		}
+		else {
+			cout << sortedVec[i] << endl;
+		}
+	}
 	return 0;
 }
