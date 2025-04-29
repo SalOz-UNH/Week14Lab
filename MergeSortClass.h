@@ -12,8 +12,11 @@ using namespace std;
 class MergeSortClass {
 
 public:
+
+	// Separates the list into 2 lists for merge sort
 	vector<int> mergeSort(vector<int>* arr);
 
+	// Sorts and returns the merged (and sorted) numbers
     vector<int> merge(vector<int>* left_hlf, vector<int>* right_hlf);
 
 };

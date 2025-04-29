@@ -6,9 +6,13 @@
 
 
 vector<int> MergeSortClass::mergeSort(vector<int> *arr) {
+
+	// Checks if there is a minimum of one number in the vector to sort
 	if (arr->size() <= 1) {
 		return *arr;
 	}
+
+	// Separates the list of unsorted numbers for merge
 	else {
 		int mid = arr->size() / 2;
 		vector <int> left_hlf(arr->begin(), arr->begin() + mid);
@@ -21,7 +25,7 @@ vector<int> MergeSortClass::mergeSort(vector<int> *arr) {
 	}
 }
 
-
+// Sorts the numbers into one large vector and returns the sorted vector
 vector<int> MergeSortClass::merge(vector<int> *left_hlf, vector<int> *right_hlf) {
 	vector <int> result;
 

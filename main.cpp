@@ -1,6 +1,6 @@
 /**
- * [program_name].cpp
- * [program_explanation]
+ * MergeSort.cpp
+ * Uses merge sort to sort a list of user inputted numbers.
  *
  * @author Salih Ozdemir and Darwin Sanchez
  */
@@ -39,7 +39,6 @@ int main() {
 	vector <int> sortedVec = sorter.mergeSort(&vec);
 
 	cout << "Unsorted vector: " << endl;
-
 	for (int i = 0; i < vec.size(); i++) {
 		if (i < vec.size() - 1) {
 			cout << vec[i] << ", ";
@@ -49,6 +48,7 @@ int main() {
 		}
 	}
 	cout << endl;
+
 
 	cout << "Sorted vector: " << endl;
 	for (int i = 0; i < sortedVec.size(); i++) {
