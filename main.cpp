@@ -2,7 +2,7 @@
  * [program_name].cpp
  * [program_explanation]
  *
- * @author Salih Ozdemir
+ * @author Salih Ozdemir and Darwin Sanchez
  */
 
 #include <iostream>
